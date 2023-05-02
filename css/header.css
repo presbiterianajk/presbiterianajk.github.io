@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  padding: 20px 40px;
+  padding: 40px;
   align-items: center;
   /* background-color: #E7F4EA; */
   margin: 0 auto;
@@ -13,17 +13,17 @@
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
-}
+  }
 
 .header-menu a {
   color: #04200B;
-  
 }
 
 @media (max-width: 800px) {
   .header {
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
   }
 
   .header-menu a {
@@ -34,7 +34,8 @@
   }
   .header-menu {
     justify-content: center;
-    gap: 40px;
+    gap: 32px;
+    padding: 12px;
   }
 
 }

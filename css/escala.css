@@ -1,76 +1,90 @@
-.escala{
+.escala {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 40px;
 }
 
-.escala-titulo{
+.escala-titulo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 120px;
 }
 
-.data{
+.data {
   font-size: 32px;
 }
 
-.escala-lista{
-  margin-top: 60px;
+.escala-lista {
   display: flex;
-  gap: 32px;
   flex-wrap: wrap;
+  gap: 32px;
   justify-content: center;
+  margin-top: 60px;
+  padding: 12px;
 }
 
-.escala-lista li{
+.escala-lista li {
   background-color: #D1E4D6;
-  padding: 12px 32px;
+  padding: 20px;
   border-radius: 4px;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
+  flex-grow: 1;
 }
 
-.escala-lista p{
+.escala-lista p {
   font-size: 18px;
   font-weight: 400;
+  padding: 8px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
+  .escala{
+    padding: 20px;
+  }
 
-  .escala-titulo{
+  .escala-titulo {
     margin-top: 40px;
     flex-direction: column;
     gap: 10px;
     text-align: center;
   }
-  .tituloh3{
+
+  .tituloh3 {
     font-size: 40px;
   }
-  .data{
+
+  .data {
     font-size: 20px;
   }
 }
 
-@media (max-width: 600px){
-    .escala {
-      padding: 12px;
-    }
+  .escala-lista{
+    gap: 20px;
+    margin-top: 40px;
+    flex-grow: 1;
+  }
 
-  .escala-titulo{
+
+
+@media (max-width: 600px) {
+  .escala-titulo {
     margin-top: 20px;
   }
 
-  .escala-lista{
+  .escala-lista {
     gap: 10px;
-    margin-top: 32px ;
+    margin-top: 32px;
   }
-  .escala-lista li{
+
+  .escala-lista li {
     font-size: 20px;
     padding: 12px;
   }
-  .escala-lista p{
+
+  .escala-lista p {
     font-size: 16px;
   }
 }
