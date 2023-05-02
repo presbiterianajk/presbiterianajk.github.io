@@ -2,6 +2,22 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
+  position: relative;
+}
+
+.musica::before {
+  content: '';
+  display: block;
+  background: url("../svg/icons8-music.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -60px;
+  right: 220px;
+  opacity: 4%;
+  width: 300px;
+  height: 300px;
+  rotate: 15deg;
 }
 
 .musica-titulo {
@@ -40,7 +56,7 @@ a {
   font-size: 16px;
 }
 
-.musica-link{
+.musica-link {
   display: flex;
   gap: 20px;
 }
@@ -61,17 +77,17 @@ a {
   }
 }
 
-  .musica-lista li {
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
-  }
+.musica-lista li {
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
 
-  .musica-link a {
-    background-color: #9ac794;
-    padding: 10px;
-    border-radius: 4px;
-  }
+.musica-link a {
+  background-color: #9ac794;
+  padding: 10px;
+  border-radius: 4px;
+}
 
 @media (max-width:600px) {
   .musica-lista li {
@@ -82,8 +98,25 @@ a {
   .lista-titulo {
     gap: 5px;
   }
+
+  
+.musica::before {
+  content: '';
+  display: block;
+  background: url("../svg/icons8-music.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -60px;
+  right: 20px;
+  opacity: 4%;
+  width: 300px;
+  height: 300px;
+  rotate: 15deg;
+}
 }
 
-.musica-link a:hover{
+.musica-link a:hover {
   background-color: #83aa8e;
 }
+
