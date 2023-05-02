@@ -1,0 +1,22 @@
+.footer{
+  max-width: 1200px;
+  padding: 60px;
+
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.footer-container img{
+  max-width: 80px;  
+}
+
+.footer-container  span{
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
