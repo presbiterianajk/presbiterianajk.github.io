@@ -1,0 +1,30 @@
+.organizacao{
+  max-width: 1200px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.organizacao-lista{
+  max-width: 60ch;
+  padding: 12px;
+  margin-top: 60px;
+}
+.organizacao-lista li{
+  padding: 20px;
+}
+
+.organizacao-lista h4{
+  font-size: 24px;
+}
+.organizacao-lista p{
+  /* margin-top: 8px;
+  margin-left: 32px; */
+  line-height: 26px;
+  padding: 8px;
+}
+
+.organizacao-lista li:nth-child(odd){
+  background-color: #D1E4D6;
+  border-radius: 4px;
+}
+
