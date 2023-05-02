@@ -1,0 +1,41 @@
+.introducao{
+  max-width: 1200px;
+  text-align: center;
+  margin: 60px auto;
+  padding: 20px 40px;
+  /* background-color: #d4d4d4; */
+}
+
+.introducao h1{
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.introducao h2{
+  font-family: "Noto Serif", serif;
+  font-size: 48px;
+}
+
+@media (max-width: 800px){
+  .introducao h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .introducao h2{
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px){
+  
+  .introducao{
+    margin: 10px auto;
+  }
+  .introducao h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .introducao h2{
+    font-size: 18px;
+  }
+}

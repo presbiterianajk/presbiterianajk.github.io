@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 20px 40px;
+  align-items: center;
+  /* background-color: #E7F4EA; */
+  margin: 0 auto;
+
+}
+
+.header-menu {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.header-menu a {
+  color: #04200B;
+  
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-menu a {
+    background-color: #D1E4D6;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 450;
+  }
+  .header-menu {
+    justify-content: center;
+    gap: 40px;
+  }
+
+}
