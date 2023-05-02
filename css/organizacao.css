@@ -17,8 +17,7 @@
   font-size: 24px;
 }
 .organizacao-lista p{
-  /* margin-top: 8px;
-  margin-left: 32px; */
+
   line-height: 26px;
   padding: 8px;
 }
@@ -28,3 +27,20 @@
   border-radius: 4px;
 }
 
+@media (max-width: 800px){
+  .organizacao{
+    padding: 20px;
+  }
+  .organizacao-titulo{
+    text-align: center;
+  }
+  .organizacao-lista{
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px){
+  .organizacao-lista h4{
+    font-size: 18px;
+  }
+}
