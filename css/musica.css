@@ -5,21 +5,6 @@
   position: relative;
 }
 
-.musica::before {
-  content: '';
-  display: block;
-  background: url("../svg/icons8-music.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: -60px;
-  right: 220px;
-  opacity: 4%;
-  width: 300px;
-  height: 300px;
-  rotate: 15deg;
-}
-
 .musica-titulo {
   margin-top: 120px;
 }
@@ -98,22 +83,6 @@ a {
   .lista-titulo {
     gap: 5px;
   }
-
-  
-.musica::before {
-  content: '';
-  display: block;
-  background: url("../svg/icons8-music.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: -60px;
-  right: 20px;
-  opacity: 4%;
-  width: 300px;
-  height: 300px;
-  rotate: 15deg;
-}
 }
 
 .musica-link a:hover {
