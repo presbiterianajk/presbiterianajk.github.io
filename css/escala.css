@@ -14,7 +14,7 @@
 .data {
   font-size: 32px;
 }
-
+/* 
 .escala-lista {
   display: flex;
   flex-wrap: wrap;
@@ -22,6 +22,15 @@
   justify-content: center;
   margin-top: 60px;
   padding: 12px;
+} */
+
+.escala-lista{
+  display: 	grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+  margin-top: 60px;
+  padding-left: 0px;
+
 }
 
 .escala-lista li {
@@ -61,7 +70,6 @@
   }
 
   .escala-lista{
-    gap: 20px;
     margin-top: 40px;
     flex-grow: 1;
   }

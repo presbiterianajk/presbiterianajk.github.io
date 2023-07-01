@@ -14,10 +14,10 @@
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 60px;
-  padding: 12px;
+  padding-left: 0px;
 }
 
-.musica-lista li {
+ .musica-lista li {
   display: flex;
   flex-grow: 1;
   background-color: #D1E4D6;
@@ -25,7 +25,14 @@
   border-radius: 4px;
   gap: 20px;
   justify-content: center;
-}
+} 
+
+ /* .musica-lista li{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  background-color: #D1E4D6;
+  border-radius: 5px;
+}  */
 
 .lista-titulo {
   display: flex;
@@ -44,6 +51,12 @@ a {
 .musica-link {
   display: flex;
   gap: 20px;
+}
+
+.musica-link a{
+  text-transform: uppercase;
+  background-image: linear-gradient(#bccfb4, #91b89a);
+  font-weight: 500;
 }
 
 @media (max-width:800px) {
@@ -75,6 +88,9 @@ a {
 }
 
 @media (max-width:600px) {
+  .musica-titulo {
+    margin-top: 40px;
+  }
   .musica-lista li {
     padding: 10px;
     gap: 10px;
@@ -86,6 +102,7 @@ a {
 }
 
 .musica-link a:hover {
-  background-color: #83aa8e;
+  background-image: linear-gradient(#bccfb4, #93d1a1);
+
 }
 
