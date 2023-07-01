@@ -1,20 +1,23 @@
+.aviso{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
 .introducaoAviso{
    max-width: 1200px;
   text-align: center;
   margin: 0px auto;
-  padding: 20px 40px;
   background-color: #D1E4D6; 
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 20px;
+  padding: 40px;
   border-radius: 5px;
 }
 
 .tituloAviso{
   color: #274D30;
   font-size: 60px;
-  margin-top: 40px;
-  margin-bottom 40px;
 }
 
 .paragrafoAviso{
@@ -30,12 +33,21 @@
 
 
 @media (max-width: 800px){
+  .aviso{
+    padding: 20px;
+  }
+  
+  .introducaoAviso{
+    padding: 12px 20px;
+  }
+  
   .tituloAviso{
     font-size: 40px;
   }
 }
 
 @media (max-width: 600px){
+
   .tituloAviso{
     font-size: 40px;
   }
@@ -43,6 +55,15 @@
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 350px){
+  .tituloAviso{
+    font-size: 32px;
+  }
+  .paragrafoAviso{
+    font-size: 16px;
   }
 }
 

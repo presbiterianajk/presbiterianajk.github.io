@@ -22,7 +22,7 @@
 
 .organizacao-lista{
   max-width: 60ch;
-  padding: 12px;
+  padding-left: 0px;
   margin-top: 60px;
 }
 .organizacao-lista li{
@@ -48,6 +48,7 @@
     padding: 20px;
   }
   .organizacao-titulo{
+    margin-top: 40px;
     text-align: center;
   }
   .organizacao-lista{
@@ -56,6 +57,14 @@
 }
 
 @media (max-width: 600px){
+.organizacao-titulo{
+  margin-top: 20px;
+}
+
+.organizacao-lista{
+  margin-top: 20px;
+}
+
   .organizacao-lista h4{
     font-size: 18px;
   }
