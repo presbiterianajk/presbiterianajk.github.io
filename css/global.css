@@ -44,11 +44,18 @@ hr{
   cursor: pointer;
 }
 
+/*  controla a cor do botoes */
+.mobile-nav .nav-link {
+  color: #000; /* cor padrão dos botões */
+}
 
+.mobile-nav .nav-link.active {
+  color: #ff0000; /* cor dos botões selecionados */
+}
 
+/* controla o funcionamento mobile dos links com js */
 
 @media (max-width: 600px){
-/* controla o funcionamento mobile dos links com js */
 section {
   display: none;
 }

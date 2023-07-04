@@ -1,4 +1,6 @@
-  function showPopup() {
+// POP UP QUANDO ENTRAR PELA PRIMEIRA VEZ NO SITE NO DIA
+
+function showPopup() {
     var overlay = document.getElementById("overlay");
     var popup = document.getElementById("popup");
     overlay.classList.add("show-popup");
@@ -32,9 +34,6 @@
   // Fecha o pop-up quando o botão 'Fechar' é clicado
   var closeBtn = document.getElementById("close-btn");
   closeBtn.addEventListener("click", closePopup);
-
-
-
 
 
 // FUNÇÃO MOBILE NAV
@@ -94,6 +93,51 @@ scrollLinks.forEach(link => {
     }
   });
 });
+
+// ALTERA A COR DO BOTÕES NO MOBILE
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Adicione a classe 'active' ao primeiro link e à primeira seção
+  var firstLink = document.querySelector(".header-menu a");
+  var firstSection = document.querySelector(".section");
+  firstLink.classList.add("active");
+  firstSection.classList.add("active");
+
+  // Manipule o clique nos links
+  var links = document.querySelectorAll(".header-menu a");
+  links.forEach(function(link) {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      // Remova a classe 'active' de todos os links e seções
+      links.forEach(function(link) {
+        link.classList.remove("active");
+      });
+      var sections = document.querySelectorAll(".section");
+      sections.forEach(function(section) {
+        section.classList.remove("active");
+      });
+
+      // Adicione a classe 'active' apenas ao link clicado
+      this.classList.add("active");
+
+      // Obtenha o ID da seção correspondente ao link clicado
+      var sectionId = this.getAttribute("href");
+
+      // Adicione a classe 'active' à seção correspondente
+      document.querySelector(sectionId).classList.add("active");
+
+      // Role a página até a seção correspondente
+      var offset = document.querySelector(sectionId).offsetTop;
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth"
+      });
+    });
+  });
+});
+
+
 
 
   // function showPopup() {
