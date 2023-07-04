@@ -37,7 +37,7 @@
 
 
 
-// FUNÇÃO MOBILE
+// FUNÇÃO MOBILE NAV
 document.addEventListener("DOMContentLoaded", function() {
   // Inicialmente, exiba a seção "Escala" e adicione a classe "active" ao link correspondente
   document.querySelector("#escala").classList.add("active");
@@ -74,18 +74,26 @@ if (/Mobi|Android/i.test(navigator.userAgent)) {
   });
 }
 
+// Seletor para todos os links com a classe "scroll-link"
+const scrollLinks = document.querySelectorAll('.scroll-link');
 
+// Adicionar evento de clique a cada link
+scrollLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Impedir o comportamento padrão do link
 
+    const targetId = link.getAttribute('href'); // Obter o ID do alvo do link
+    const targetElement = document.querySelector(targetId); // Selecionar o elemento alvo usando o ID
 
-
-
-
-
-
-
-
-
-
+    if (targetElement) {
+      // Rolagem suave até o elemento alvo
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
 
 
   // function showPopup() {
