@@ -43,3 +43,17 @@ hr{
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+
+
+@media (max-width: 600px){
+/* controla o funcionamento mobile dos links com js */
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+}

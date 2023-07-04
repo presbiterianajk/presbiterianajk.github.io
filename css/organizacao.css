@@ -57,7 +57,15 @@
 }
 
 @media (max-width: 600px){
-.organizacao-titulo{
+
+  section {
+    display: none;
+  }
+  
+  section.active {
+    display: block;
+  }
+  .organizacao-titulo{
   margin-top: 20px;
 }
 
