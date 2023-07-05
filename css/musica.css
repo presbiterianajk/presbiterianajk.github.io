@@ -6,6 +6,9 @@
 }
 
 .musica-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 120px;
 }
 
@@ -27,12 +30,6 @@
   justify-content: center;
 } 
 
- /* .musica-lista li{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  background-color: #D1E4D6;
-  border-radius: 5px;
-}  */
 
 .lista-titulo {
   display: flex;
@@ -41,11 +38,24 @@
   padding: 12px;
   gap: 8px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.link-titulo{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 12px;
+  gap: 8px;
+  text-align: center;
+  font-family: "Roboto" ;
+  font-weight: 300;
 }
 
 .lista-titulo span,
 a {
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 .musica-link {
@@ -56,7 +66,8 @@ a {
 .musica-link a{
   text-transform: uppercase;
   background-image: linear-gradient(#bccfb4, #91b89a);
-  font-weight: 500;
+font-size: 14px;
+font-weight: 500;
 }
 
 @media (max-width:800px) {
@@ -66,6 +77,8 @@ a {
 
   .musica-titulo {
     margin-top: 40px;
+    flex-direction: column;
+    gap: 10px;
     text-align: center;
   }
 
@@ -88,9 +101,8 @@ a {
 }
 
 @media (max-width:600px) {
- 
   .musica-titulo {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .musica-lista li {
     padding: 10px;

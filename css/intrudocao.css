@@ -39,6 +39,6 @@
   }
   .introducao h2{
     font-size: 24px;
-    order: 99;
+    margin-top: 20px;
   }
 }

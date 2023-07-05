@@ -14,33 +14,35 @@
 .data {
   font-size: 32px;
 }
-/* 
+
 .escala-lista {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 8px;
   justify-content: center;
   margin-top: 60px;
   padding: 12px;
-} */
+}
 
-.escala-lista{
+/* .escala-lista{
   display: 	grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 8px;
   margin-top: 60px;
   padding-left: 0px;
 
-}
+} */
 
 .escala-lista li {
   background-color: #D1E4D6;
-  padding: 20px;
+  padding: 16px;
   border-radius: 4px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 24px;
   text-align: center;
   flex-grow: 1;
+  flex-basis: 80px;
+  font-family: "Poppins", sans-serif;
 }
 
 .escala-lista p {
