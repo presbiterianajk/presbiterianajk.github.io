@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Noto Serif';
+  src: url('../fonts/Noto_Serif/') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/') format('truetype');
+}
