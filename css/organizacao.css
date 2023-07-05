@@ -3,6 +3,7 @@
   padding: 40px;
   margin: 0 auto;
   position: relative;
+  font-family: "Roboto Regular";
 }
 
 .organizacao::before{

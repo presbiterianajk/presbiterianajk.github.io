@@ -37,18 +37,19 @@
   background-color: #D1E4D6;
   padding: 16px;
   border-radius: 4px;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 24px;
   text-align: center;
   flex-grow: 1;
   flex-basis: 80px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Medium", sans-serif;
 }
 
 .escala-lista p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   padding: 8px;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 @media (max-width: 800px) {

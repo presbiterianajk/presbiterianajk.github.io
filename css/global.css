@@ -2,7 +2,7 @@
 body{
   margin: 0px;
   padding: 0px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
 }
  a{
   text-decoration: none;
@@ -25,6 +25,7 @@ h1, h2, h3,h4, span, p, ul, li,a {
 .tituloh3, .decoration{
   color: #34603E;
   font-size: 60px;
+  font-family: "Poppins Medium", sans-serif;
 }
 
 

@@ -5,7 +5,6 @@
   padding: 40px;
   align-items: center;
   margin: 0 auto;
-
 }
 
 .header-menu {
@@ -19,6 +18,7 @@
   /* PADDING 16 CIMA E BAIXO PARA FICAR MAIS FACIL O CURSOR DO MOUSE ENCONTRAR NA VERSÃO DESKTOP */
   padding: 16px 0px;
   position: relative;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 .header-menu a:after{
@@ -50,7 +50,6 @@
     background-color: #ddd;
    padding: 10px 20px;
     border-radius: 4px;
-    font-weight: 450;
     box-shadow: inset 0px -1px 1px #D1E4D6;
     font-size: 0.8rem;
     text-transform: uppercase;
