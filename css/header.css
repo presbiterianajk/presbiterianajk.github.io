@@ -18,7 +18,7 @@
   /* PADDING 16 CIMA E BAIXO PARA FICAR MAIS FACIL O CURSOR DO MOUSE ENCONTRAR NA VERSÃO DESKTOP */
   padding: 16px 0px;
   position: relative;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Poppins Medium", sans-serif;
 }
 
 .header-menu a:after{
