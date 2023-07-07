@@ -3,7 +3,6 @@
   padding: 40px;
   margin: 0 auto;
   position: relative;
-  font-family: "Roboto Regular";
 }
 
 .organizacao::before{
@@ -21,7 +20,7 @@
   rotate: 45deg;
 }
 .organizacao-titulo{
-  margin-top: 120px;
+  margin-top: 60px;
  }
 
 .organizacao-lista{
