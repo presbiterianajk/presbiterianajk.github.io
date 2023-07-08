@@ -37,6 +37,8 @@ margin-top: 40px;
   font-size: 16px;
   padding: 8px;
   border-radius: 5px;
+  border-style: solid;
+  border-color: #45a049;
 }
 
 
@@ -61,11 +63,12 @@ margin-top: 40px;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 500;
+  word-break:keep-all;
 }
 
 .sugestaoLista{
   max-width: 600px;
-  margin-top: 20px;
+  margin-top: 32px;
   padding: 20px;
   border-radius: 5px;
   /* background-color: #D1E4D6; */
@@ -87,11 +90,13 @@ margin-top: 40px;
 .itemLista{
   display: flex;
   justify-content: space-between;
+  gap: 4px;
   max-width: 600px;
-  padding: 12px;
+  padding: 8px;
   border-radius: 4px;
   align-items: center;
-  font-weight: 500;
+  font-weight: 500;  
+  overflow-wrap: break-word;
 }
 
 .sugestaoLista ul li:nth-child(even){
@@ -131,8 +136,14 @@ margin-top: 40px;
   .divBotao{
     display: flex;
     max-width: 600px;
-    justify-content: CENTER;
+    justify-content: center;
   }
-  
+  .sugestaoDeletar{
+    font-size: 12px;
+  }
 
+  .sugestaoLista{
+    padding: 12px;
+  }
 }
+
