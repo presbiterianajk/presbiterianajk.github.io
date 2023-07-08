@@ -31,6 +31,8 @@
         <li><a href="#escala" class="scroll-link nav-link active">Escala</a></li>
         <li><a href="#musica" class="scroll-link nav-link">Música</a></li>
         <li><a href="#organizacao" class="scroll-link nav-link">Organização</a></li>
+        <li><a href="#sugestao" class="scroll-link nav-link">Sugestões
+        </a></li>
       </ul>
     </nav>
   </header>
@@ -39,6 +41,7 @@
     <h1>UMA FAMÍLIA EM CRESCIMENTO</h1>
     <h2>Louvor IPJK</h2>
   </main>
+
 
   <section class="escala" id="escala" aria-label="Escala">
     <div class="escala-titulo">
@@ -118,6 +121,20 @@
       </ul>
     </div>
   </section>
+  
+<section class="sugestao" id="sugestao" aria-label="Sugestão">
+  <div class="sugestao-titulo">
+  <h3 class="tituloh3">sugestões<span class="decoration">.</span></h3>
+  <div> 
+  <label for="textInput">Digite aqui a sugestão de música</label>
+</div>  
+  <input type="text" id="textInput">
+    <button id="sendButton">Enviar</button>
+    <ul id="textList"></ul>
+  </div>
+  
+  </section>
+
 
   <section class="organizacao" id="organizacao">
     <div class="organizacao-titulo">
@@ -172,17 +189,12 @@
       <span>2023 © Igreja Presbiteriana do JK - Todos os direitos reservados.</span>
     </div>
   </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
   
-<script src="./script.js"></script>
-
-
-
-
-
-
-
-
-
 </body>
-
+<script src="./config.js"></script>
+<script src="./sugestao.js"></script>
+<script src="./script.js"></script>
 </html>
