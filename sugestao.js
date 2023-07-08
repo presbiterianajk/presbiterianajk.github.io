@@ -19,10 +19,12 @@
  db.on('child_added', function(data) {
    var li = document.createElement('li');
    li.textContent = data.val();
+   li.classList = 'itemLista';
    textList.appendChild(li);
 
    var deleteButton = document.createElement('button');
    deleteButton.textContent = 'Excluir';
+   deleteButton.classList = 'sugestaoDeletar'
    li.appendChild(deleteButton);
 
    deleteButton.onclick = function() {

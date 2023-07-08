@@ -139,6 +139,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FUNÇÃO PARA APARECER O POPUP SEMPRE
+
+
   // function showPopup() {
   //   var overlay = document.getElementById("overlay");
   //   var popup = document.getElementById("popup");
