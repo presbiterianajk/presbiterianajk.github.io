@@ -8,14 +8,14 @@
 }
 
 .introducao h1{
-  font-size: 60px;
+  font-size: 48px;
   margin-bottom: 20px;
   font-family: "Noto Serif Regular";
 }
 
 .introducao h2{
     font-family: "Noto Serif Regular";
-  font-size: 48px;
+  font-size: 40px;
 }
 
 @media (max-width: 800px){

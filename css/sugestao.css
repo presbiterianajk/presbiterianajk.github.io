@@ -2,6 +2,8 @@
 max-width: 1200px;
 margin: 0px auto;
 padding: 40px;
+display: flex;
+flex-direction: column;
 }
 
 .sugestaoTitulo{
@@ -22,15 +24,18 @@ margin-top: 40px;
 
 
 .sugestaoInput{
-  margin-top: 20px;;
+  margin-top: 40px;;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 600px;
 }
 
 .sugestaoInput label{
   font-size: 16px;
+  background-color: #D1E4D6;
+  padding: 12px;
+  border-radius: 5px;
+  max-width: fit-content;
 }
 
 .textInput{
@@ -38,26 +43,27 @@ margin-top: 40px;
   padding: 8px;
   border-radius: 5px;
   border-style: solid;
-  border-color: #45a049;
+  background-color: #D1E4D6;
+  margin-top: 20px;
+  max-width: 600px;
 }
 
 
 .sugestaoBotao{
   border-style: none;
   cursor: pointer;
-  background-color: #45a049;
   background-color: #0d5131;
   padding: 10px 20px;
   text-transform: uppercase;
   color: #fff;
   border-radius: 5px;
-  margin-top: 8px;
+  margin-top: 12px;
   font-weight: 600;
 }
 
 .sugestaoDeletar{
   border-style: none;
-  background-color: #c0bebe;
+  background-color: #9e9e9e;
   color: #000;
   padding: 8px 12px;
   border-radius: 5px;
@@ -67,13 +73,16 @@ margin-top: 40px;
   word-break:keep-all;
 }
 
+.sugestaoDeletar:hover{
+  background-color: #bbb9b9;
+}
+
 .sugestaoLista{
   max-width: 600px;
   margin-top: 32px;
   padding: 20px;
   border-radius: 5px;
-  /* background-color: #D1E4D6; */
-  background-color: #daf0e0;
+  background-color: #D1E4D6;
 }
 
 .sugestaoLista h3{
@@ -100,8 +109,8 @@ margin-top: 40px;
   overflow-wrap: break-word;
 }
 
-.sugestaoLista ul li:nth-child(even){
-  background-color: #45a049ad;
+.sugestaoLista ul li:nth-child(odd){
+  background-color: #95b99f;
 }
 
 /* .sugestaoLista ul li:nth-child(odd){
@@ -118,7 +127,6 @@ margin-top: 40px;
 
 
 @media (max-width: 800px){
-
 .sugestaoTitulo{
   text-align: center;
 }
@@ -132,9 +140,18 @@ margin-top: 40px;
   margin-top: 20px;
   }
   .sugestaoTexto{
+    display: inline-block;
     margin-top: 20px;
     font-size: 16px;
+    align-self: center;
   }
+
+.sugestaoInput label{
+ align-self: center;
+ margin-top: 20px;
+}
+
+
 
   .divBotao{
     display: flex;
