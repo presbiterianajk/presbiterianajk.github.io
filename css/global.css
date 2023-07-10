@@ -23,7 +23,8 @@ h1, h2, h3,h4, span, p, ul, li,a {
 }
 
 .tituloh3, .decoration{
-  color: #34603E;
+  /* color: #34603E; */
+  color: #0d5131;
   font-size: 60px;
   font-family: "Roboto Medium", sans-serif;
 }

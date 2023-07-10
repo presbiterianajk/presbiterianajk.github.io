@@ -2,11 +2,11 @@
 max-width: 1200px;
 margin: 0px auto;
 padding: 40px;
-margin-top: 40px;
 }
 
 .sugestaoTitulo{
   text-align: left;
+margin-top: 40px;
 }
 
 .sugestaoTexto{
@@ -46,6 +46,7 @@ margin-top: 40px;
   border-style: none;
   cursor: pointer;
   background-color: #45a049;
+  background-color: #0d5131;
   padding: 10px 20px;
   text-transform: uppercase;
   color: #fff;
@@ -127,7 +128,9 @@ margin-top: 40px;
   .sugestao{
     padding: 20px;
   }
-
+  .sugestaoTitulo{
+  margin-top: 20px;
+  }
   .sugestaoTexto{
     margin-top: 20px;
     font-size: 16px;
