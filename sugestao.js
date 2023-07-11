@@ -7,13 +7,16 @@
  var db = firebase.database().ref('texts');
 
  // Função para enviar um novo texto para a base de dados do Firebase
- sendButton.onclick = function() {
-   var text = textInput.value;
-   if (text) {
-     db.push(text);
-     textInput.value = '';
-   }
- }
+sendButton.onclick = function() {
+  var text = textInput.value;
+  if (text) {
+    db.push(text);
+    textInput.value = '';
+  } else {
+    alert('Digite uma música antes de enviar.');
+  }
+}
+
 
  // Função para adicionar um novo texto à lista sempre que um novo texto é adicionado à base de dados do Firebase
  db.on('child_added', function(data) {
@@ -23,7 +26,7 @@
    textList.appendChild(li);
 
    var deleteButton = document.createElement('button');
-   deleteButton.textContent = 'Excluir';
+   deleteButton.textContent = 'excluir';
    deleteButton.classList = 'sugestaoDeletar'
    li.appendChild(deleteButton);
 
