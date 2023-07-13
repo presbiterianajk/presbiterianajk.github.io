@@ -48,38 +48,38 @@ function removeName() {
 }
 
 
+// var database = firebase.database();
 
+// // Referência para a lista no HTML
+// var escalaLista = document.querySelector('.escala-lista');
 
-var database = firebase.database();
+// // Referência para a escala no Firebase
+// var escalaRef = firebase.database().ref('escala');
 
-database.ref('escala').on('value', (snapshot) => {
-  var data = snapshot.val();
+// // Função para criar um novo item da lista
+// function criarItemEscala(funcao, pessoas) {
+//   var li = document.createElement('li');
+//   li.textContent = funcao + ' ';
+  
+//   pessoas.forEach(function(nome) {
+//     var p = document.createElement('p');
+//     p.textContent = nome;
+//     li.appendChild(p);
+//   });
 
-  // Mapeie os elementos li para os instrumentos
-  var lis = document.querySelectorAll('.escala-lista li');
-  var map = {
-    violao: lis[0],
-    baixo: lis[1],
-    guitarra: lis[2],
-    // Adicione mais mapeamentos conforme necessário
-  };
+//   return li;
+// }
 
-  // Atualize os elementos p para cada instrumento
-  for (var instrument in data) {
-    var people = data[instrument];
-    var li = map[instrument];
-    var ps = li.querySelectorAll('p');
+// // Escuta as alterações na escala
+// escalaRef.on('value', function(snapshot) {
+//   // Limpa a lista
+//   escalaLista.innerHTML = '';
 
-    // Limpe os elementos p atuais
-    for (var i = 0; i < ps.length; i++) {
-      li.removeChild(ps[i]);
-    }
-
-    // Adicione os novos elementos p
-    for (var i = 0; i < people.length; i++) {
-      var p = document.createElement('p');
-      p.textContent = people[i];
-      li.appendChild(p);
-    }
-  }
-});
+//   // Atualiza a lista com os novos dados
+//   var escala = snapshot.val();
+//   for (var funcao in escala) {
+//     var pessoas = escala[funcao];
+//     var li = criarItemEscala(funcao, pessoas);
+//     escalaLista.appendChild(li);
+//   }
+// });
