@@ -1,4 +1,3 @@
-
 // CONFIGURAÇÃO DO FIREBASE
 
 var firebaseConfig = {
