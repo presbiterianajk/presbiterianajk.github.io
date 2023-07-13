@@ -1,0 +1,29 @@
+.login-bg{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  padding: 80px; 
+    background-image: linear-gradient(#8aceae, #568f74);
+  border-radius: 5px;
+  gap: 12px;
+}
+
+.loginForm label{
+  display: block;
+}
+
+.loginForm input{
+  margin-top: 4px;
+}
+
