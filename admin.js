@@ -43,3 +43,17 @@ function updateName() {
     }
   });
 }
+
+
+
+function updateDate() {
+  var dateInput = document.getElementById('dateInput');
+  var date = new Date(dateInput.value);
+
+  // Defina a hora para o meio-dia no horário local
+  date.setHours(12);
+
+  // Salve a data no Firebase
+  var ref = firebase.database().ref('time');
+  ref.set(date.toISOString());
+}

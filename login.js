@@ -6,9 +6,8 @@ function login() {
 
   auth.signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      // Login bem-sucedido, mostre o formulário de atualização
-      document.getElementById('loginForm').style.display = 'none';
-      document.getElementById('updateForm').style.display = 'block';
+      // Login bem-sucedido, redirecione para a página de administração
+      window.location.href = 'admin.html';
     })
     .catch((error) => {
       // Erro no login, mostre uma mensagem de erro
