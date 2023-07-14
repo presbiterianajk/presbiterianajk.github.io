@@ -1,3 +1,37 @@
+
+
+// Verificação de autenticação
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // O usuário está logado, mostre a página de administração
+    document.getElementById('updateForm').style.display = 'block';
+  } else {
+    // Nenhum usuário está logado, redirecione para a página de login
+    window.location.href = './login.html';
+  }
+});
+
+// Verificação de autenticação
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // O usuário está logado, mostre a página de administração
+    document.getElementById('updateForm').style.display = 'block';
+  } else {
+    // Nenhum usuário está logado, redirecione para a página de login
+    window.location.href = 'login.html';
+  }
+});
+
+// Deslogar o usuário quando sair da página
+window.onbeforeunload = function() {
+  firebase.auth().signOut();
+};
+
+
+
+
+
+
 function addName() {
   var instrument = document.getElementById('instrumentSelect').value;
   var name = document.getElementById('nameInput').value;
@@ -90,3 +124,5 @@ function removeMusic() {
     });
   });
 }
+
+
