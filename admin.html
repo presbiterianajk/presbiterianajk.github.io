@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Admin Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louvor JK | Controle</title>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-  <h1>Admin Page</h1>
 
-  <div id="updateForm">
+<body>
+
+  <div class="adminBg">
+
+    <div class="admin">
+    <h1>Controle Louvor</h1>
+ 
+  <div id="updateForm" class="updateForm">
+    <div id="updateDateForm" class="updateDate">
+      <input type="date" id="dateInput">
+      <button class="botao" onclick="updateDate()">Atualizar Data</button>
+    </div>
+    
+    <div class="selectForm">
     <select id="instrumentSelect">
       <option value="Violão">Violão</option>
       <option value="Baixo">Baixo</option>
@@ -21,20 +36,35 @@
       <option value="Teclado">Teclado</option>
       <!-- Adicione mais opções conforme necessário -->
     </select>
-    <input type="text" id="nameInput" placeholder="Nome">
-    <button onclick="addName()">Adicionar</button>
-    <button onclick="removeName()">Remover</button>
-    <input type="text" id="oldNameInput" placeholder="Nome Antigo">
-    <input type="text" id="newNameInput" placeholder="Nome Novo">
-    <button onclick="updateName()">Alterar</button>
+    </div>
+
+    <div class="inputForm">
+        <div>
+          <label for="nameInput">Nome</label>
+          <input type="text" id="nameInput">
+        </div>
+        <div>
+          <label for="oldNameInput">Nome Antigo</label>
+          <input type="text" id="oldNameInput">  
+        </div>
+        <div>
+          <label for="newNameInput">Nome Novo</label>
+          <input type="text" id="newNameInput">
+        </div>
+        <div class="botoes">
+        <button class="botao" onclick="addName()">Adicionar</button>
+        <button class="botao" onclick="removeName()">Remover</button>
+        <button class="botao" onclick="updateName()">Alterar</button>
+      </div>
+    </div>
   </div>
 
-  <div id="updateDateForm">
-    <input type="date" id="dateInput">
-    <button onclick="updateDate()">Atualizar Data</button>
-  </div>
-
+</div>
+</div>
   <script src="./config.js"></script>
   <script src="./admin.js"></script>
+
 </body>
+
+
 </html>
