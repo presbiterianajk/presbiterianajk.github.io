@@ -11,59 +11,85 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
+
 <body>
-
   <div class="adminBg">
-
     <div class="admin">
-    <h1>Controle Louvor</h1>
- 
-  <div id="updateForm" class="updateForm">
-    <div id="updateDateForm" class="updateDate">
-      <input type="date" id="dateInput">
-      <button class="botao" onclick="updateDate()">Atualizar Data</button>
-    </div>
-    
-    <div class="selectForm">
-    <select id="instrumentSelect">
-      <option value="Violão">Violão</option>
-      <option value="Baixo">Baixo</option>
-      <option value="Guitarra">Guitarra</option>
-      <option value="Som">Som</option>
-      <option value="Bateria">Bateria</option>
-      <option value="Voz">Voz</option>
-      <option value="Slide">Slide</option>
-      <option value="Teclado">Teclado</option>
-      <!-- Adicione mais opções conforme necessário -->
-    </select>
-    </div>
-
-    <div class="inputForm">
-        <div>
-          <label for="nameInput">Nome</label>
-          <input type="text" id="nameInput">
+      <h1>Controle Louvor</h1>
+      <div id="updateForm" class="updateForm">
+        <h2>Atualizar Escala</h2>
+        <div id="updateDateForm" class="updateDate">
+          <input type="date" id="dateInput">
+          <button class="botao" onclick="updateDate()">Atualizar Data</button>
+        </div>
+        
+        <div class="selectForm">
+          <select id="instrumentSelect">
+            <option value="Violão">Violão</option>
+            <option value="Baixo">Baixo</option>
+            <option value="Guitarra">Guitarra</option>
+            <option value="Som">Som</option>
+            <option value="Bateria">Bateria</option>
+            <option value="Voz">Voz</option>
+            <option value="Slide">Slide</option>
+            <option value="Teclado">Teclado</option>
+            <!-- Adicione mais opções conforme necessário -->
+          </select>
+        </div>
+        
+        <div class="inputForm">
+          <div>
+            <label for="nameInput">Nome</label>
+            <input type="text" id="nameInput">
+          </div>
+          <div>
+            <label for="oldNameInput">Nome Antigo</label>
+            <input type="text" id="oldNameInput">  
+          </div>
+          <div>
+            <label for="newNameInput">Nome Novo</label>
+            <input type="text" id="newNameInput">
+          </div>
+          <div class="botoes">
+            <button class="botao" onclick="addName()">Adicionar</button>
+            <button class="botao" onclick="removeName()">Remover</button>
+            <button class="botao" onclick="updateName()">Alterar</button>
+          </div>
+        </div>
+        
+        
+        <!-- ATUALIZAR MUICAS -->
+        
+        <div id="musicUpdateForm" class="inputForm">
+          <h2>Atualizar Músicas</h2>
+          <div>
+            <label for="musicTitleInput">Título Música</label>
+          <input type="text" id="musicTitleInput">
         </div>
         <div>
-          <label for="oldNameInput">Nome Antigo</label>
-          <input type="text" id="oldNameInput">  
+          <label for="musicArtistInput">Artista</label>
+          <input type="text" id="musicArtistInput">
         </div>
         <div>
-          <label for="newNameInput">Nome Novo</label>
-          <input type="text" id="newNameInput">
+          <label for="musicCifraLinkInput">Cifra Link</label>
+          <input type="text" id="musicCifraLinkInput">
         </div>
-        <div class="botoes">
-        <button class="botao" onclick="addName()">Adicionar</button>
-        <button class="botao" onclick="removeName()">Remover</button>
-        <button class="botao" onclick="updateName()">Alterar</button>
+        <div>
+          <label for="musicVideoLinkInput">Video Link</label>
+          <input type="text" id="musicVideoLinkInput">
+        </div>
+          <div class="botoes">
+        <button class="botao" onclick="addMusic()">Adicionar Música</button>
+          <button class="botao" onclick="removeMusic()">Remover Música</button>
+        </div>
+        </div>
       </div>
     </div>
   </div>
-
-</div>
-</div>
+  
   <script src="./config.js"></script>
   <script src="./admin.js"></script>
-
+  
 </body>
 
 

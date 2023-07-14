@@ -57,3 +57,36 @@ function updateDate() {
   var ref = firebase.database().ref('time');
   ref.set(date.toISOString());
 }
+
+// -----------ADD MUSICA ------------------
+
+function addMusic() {
+  var title = document.getElementById('musicTitleInput').value;
+  var artist = document.getElementById('musicArtistInput').value;
+  var cifraLink = document.getElementById('musicCifraLinkInput').value;
+  var videoLink = document.getElementById('musicVideoLinkInput').value;
+
+  var musicData = {
+    title: title,
+    artist: artist,
+    cifraLink: cifraLink,
+    videoLink: videoLink
+  };
+
+  var ref = firebase.database().ref('musica');
+  ref.push(musicData);
+}
+
+function removeMusic() {
+  var title = document.getElementById('musicTitleInput').value;
+  
+  var ref = firebase.database().ref('musica');
+  ref.once('value', function(snapshot) {
+    snapshot.forEach(function(childSnapshot) {
+      var childData = childSnapshot.val();
+      if (childData.title === title) {
+        childSnapshot.ref.remove();
+      }
+    });
+  });
+}

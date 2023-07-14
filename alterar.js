@@ -24,6 +24,8 @@ function criarItemEscala(funcao, pessoas) {
   return li;
 }
 
+// ----------------ALTERA A ESCALA--------------------
+
 // Escuta as alterações na escala
 escalaRef.on('value', function(snapshot) {
   // Limpa a lista
@@ -59,4 +61,55 @@ timeRef.on('value', function(snapshot) {
 
   // Atualize o elemento span com a nova data
   document.querySelector('.escala-titulo .data').textContent = formattedDate;
+  document.querySelector('.musica-titulo .data').textContent = formattedDate;
+
+});
+
+
+
+
+var musicaLista = document.querySelector('.musica-lista');
+
+var musicaRef = firebase.database().ref('musica');
+
+function criarItemMusica(musica) {
+  var li = document.createElement('li');
+  
+  var pTitulo = document.createElement('p');
+  pTitulo.className = 'lista-titulo';
+  pTitulo.textContent = musica.title;
+  
+  var spanArtista = document.createElement('span');
+  spanArtista.textContent = musica.artist;
+  pTitulo.appendChild(spanArtista);
+  
+  li.appendChild(pTitulo);
+  
+  var divLink = document.createElement('div');
+  divLink.className = 'musica-link';
+  
+  var pCifra = document.createElement('p');
+  pCifra.className = 'link-titulo';
+  pCifra.innerHTML = '<strong>Cifra Club</strong><a href="' + musica.cifraLink + '">Acessar Cifra</a>';
+  
+  var pVideo = document.createElement('p');
+  pVideo.className = 'link-titulo';
+  pVideo.innerHTML = '<strong>Youtube</strong><a href="' + musica.videoLink + '">Acessar Vídeo</a>';
+  
+  divLink.appendChild(pCifra);
+  divLink.appendChild(pVideo);
+  
+  li.appendChild(divLink);
+  
+  return li;
+}
+
+musicaRef.on('value', function(snapshot) {
+  musicaLista.innerHTML = '';
+  
+  snapshot.forEach(function(childSnapshot) {
+    var musica = childSnapshot.val();
+    var li = criarItemMusica(musica);
+    musicaLista.appendChild(li);
+  });
 });
