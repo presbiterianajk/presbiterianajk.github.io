@@ -14,3 +14,4 @@ function login() {
       alert('Erro no login: ' + error.message);
     });
 }
+

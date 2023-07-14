@@ -31,7 +31,6 @@ window.onbeforeunload = function() {
 
 
 
-
 function addName() {
   var instrument = document.getElementById('instrumentSelect').value;
   var name = document.getElementById('nameInput').value;

@@ -42,12 +42,13 @@ border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 .selectForm{
   display: flex;
   flex-direction: column;
-  place-self: center;
   margin-top: 12px;
 }
 .selectForm select{
@@ -55,6 +56,7 @@ border-radius: 12px;
   border-radius: 4px;
   background-color: #d3fae8;
   border-style: none;
+  place-self: center;
 }
 
 .inputForm{
