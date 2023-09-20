@@ -2,10 +2,7 @@
   max-width: 1200px;
   margin: 0px auto;
   height: 100vh;
-  /* background-image: linear-gradient(#8aceae, #568f74); */
-    background-image: linear-gradient(#c0c0c0, #568f74);
-
-/* background-color: #8d8d8d; */
+  background-image: linear-gradient(#c0c0c0, #568f74);
   display: grid;
   grid-template-columns: 2fr 1fr;
   border-radius: 20px;
@@ -56,10 +53,10 @@
 .loginAviso{
   padding: 60px;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.30rem;
   max-width: 60ch;
   line-height: 1.6rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .loginForm a{
@@ -122,3 +119,43 @@
 }
 
 
+@media (max-width: 800px){
+  .loginBg{
+    grid-template-columns: 1fr;
+    background-image: inherit;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .loginImg{
+    display: none;
+  }
+}
+
+@media (max-width: 600px){
+  .loginText h1{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .loginText p{
+    font-size: 1rem;
+  }
+
+  .loginAviso{
+    font-size: 1.10rem;
+    padding: 20px;
+  }
+  
+  .loginForm{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 400px){
+  .loginText h1{
+    font-size: 2rem;
+    word-break: break-all;
+  }
+  .loginText{
+    padding: 20px;
+  }
+}
