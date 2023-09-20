@@ -10,22 +10,42 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  
+  
   <div class="loginBg">
+    
     <div class="login">
-      <h1>Louvor IPJK</h1>
-      <div id="loginForm" class="loginForm">
-        <div>
+      <div class="loginText">
+        <h1>Louvor IPJK</h1>
+        <p>Controle do Louvor</p>
+      </div>
+      <div class="loginAviso">
+        <span>Esta página é dedicada para o controle da escala e músicas da equipe de música da Igreja Presbiteriana do JK - Cel. Fabriciano - MG  </span>
+      </div>
+      <div class="loginImg">
+        <img src="./img/ipjk logo branco.svg" alt="">
+      </div>
+    </div>
+    
+    <div id="loginForm" class="loginForm">
+      <h2>Login</h2>
+      <div class="divInput">
+        <div class="contentInput">
           <label for="emailInput">Email</label>
           <input type="email" id="emailInput" required>
         </div>
-        <div>
+        <div class="contentInput">
           <label for="passwordInput">Senha</label>
           <input type="password" id="passwordInput">
         </div>
-        <button class="botaoLogin" onclick="login()">Entrar</button>
       </div>
+      <button class="botaoLogin" onclick="login()">Entrar</button>
+      <a href="#">Esqueçeu a senha?</a>
     </div>
   </div>
+  
+  
+  
   <script src="./config.js"></script>
   <script src="./login.js"></script>
 </body>

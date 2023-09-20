@@ -1,53 +1,124 @@
 .loginBg{
   max-width: 1200px;
-  margin: 0 auto;
-  background-color: #568f74;
- border-radius: 12px;
-  }
+  margin: 0px auto;
+  height: 100vh;
+  /* background-image: linear-gradient(#8aceae, #568f74); */
+    background-image: linear-gradient(#c0c0c0, #568f74);
 
-.login{
-  margin-top: 60px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* background-color: #8d8d8d; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 20px;
 }
 
+.login{
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+}
+
+.loginText{
+  place-self: center;
+  background-color:#274D30; 
+  padding: 32px; 
+  border-radius: 5px;
+  color: #fff;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.loginText h1{
+  font-size: 3rem;
+}
+
+.loginText p{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;  
+  letter-spacing: 1px;
+}
+
+
+.loginImg{
+  justify-self: center;
+  align-self: end;
+  margin-bottom: 80px; 
+}
 
 .loginForm{
   display: flex;
   flex-direction: column;
-  padding: 40px; 
-    background-image: linear-gradient(#8aceae, #568f74);
-  border-radius: 5px;
+  padding: 40px; background-image: linear-gradient(#568f74, #8aceae);
   gap: 12px;
-  margin-top: 40px;
+  justify-content: center;
 }
 
-.loginForm label{
+.loginAviso{
+  padding: 60px;
+  text-align: center;
+  font-size: 1.25rem;
+  max-width: 60ch;
+  line-height: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginForm a{
+  width: max-content;
+  padding: 4px;
+}
+
+.loginForm a:hover, a:focus{
+  color: #fff;
+  outline: none;
+}
+
+.contentInput label{
   display: block;
 }
 
-.loginForm input{
+.contentInput:first-child{
+  margin-top: 30px;
+}
+
+.contentInput{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.contentInput input{
   background-color: #d3fae8;
   margin-top: 4px;
   padding: 8px;
+  font-size: 1rem;
   border-radius: 4px;
-  border-style: none;
+  border: 1px solid transparent;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
 }
 
+.contentInput input:hover, input:focus{
+  border-color: #000;
+  box-shadow: 2px 2px 2px #274D30;
+  transition: .5s ease;
+}
 .botaoLogin{
   padding: 10px 40px;
-  background-color: #274D30;
+  background-color: #4e815a;
   border-style: none;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
+  box-shadow: 2px 2px 2px #274D30;
+  outline: none;
 }
 
-.botaoLogin:hover{
-  background-color: #4e815a;
+.botaoLogin:focus, .botaoLogin:hover{
+  background-color: #274D30;
+  border-color: #000;
+  box-shadow: 2px 2px 2px #4e815a;
+
 }
+
 
