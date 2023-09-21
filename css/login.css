@@ -163,6 +163,10 @@ button:hover{
 
 
 @media (max-width: 900px){
+  .loginBg{
+    height: inherit;
+  }
+
   .container{
     grid-template-columns: 1fr;
     padding: 0;
@@ -208,31 +212,7 @@ button:hover{
 }
 
 @media (max-width: 400px){
-  .loginTitle{
-    font-size: 0.8rem;
-  }
-  .contentTitle{
-    font-size: 0.8rem;
-  }
-  .contentDescription p{
-    font-size: 0.8rem;
-  }
-  .contentDescription a{
-    font-size: 0.8rem;
-  }
-  .buttonDiv a{
-    font-size: 0.8rem;
-  }
-  .buttonDiv{
-    gap: 20px;
-  }
-
   .input input{
-    width: 250px;
-    font-size: 0.8rem;
+    width: 260px;
   }
-
-  .input label{
-    font-size: 0.8rem;
-  };
 }
