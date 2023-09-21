@@ -208,10 +208,20 @@ button:hover{
     width: auto;
     text-align: center;
   }
+  .buttonDiv{
+    padding: 20px;
+  }
 }
 
 @media (max-width: 400px){
   .input input{
     width: 260px;
+  }
+  .buttonDiv a{
+    font-size: 0.8rem;
+  }
+
+  .form{ 
+    margin-top: 0;
   }
 }
