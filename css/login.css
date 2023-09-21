@@ -115,7 +115,7 @@ button:hover{
 .contentTitle{
   padding: 80px 40px;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .contentDescription{ 
@@ -130,9 +130,11 @@ button:hover{
   color: #a9a6b4d2 ;
 }
 .contentDescription a{
-  color: #a9a6b4d2 ;
-  text-decoration: none;
   width: 45ch;
+  background-color: #6b6786d2;
+  padding: 12px;
+  border-radius: 4px;
+  color: #cdcdcd;
 }
   .contentDescription a:hover{
   color: #ffffff ;
@@ -172,17 +174,12 @@ button:hover{
   }
   .contentTitle{
     padding: 40px 40px 20px 40px;
-  }
-
-  .contentDescription a{
-    background-color: #6b6786d2;
-    padding: 12px;
-    border-radius: 4px;
-    color: #cdcdcd;
+    font-size: 1rem;
   }
   
   .contentDescription p{
     padding: 12px;
+    /* ficar mesmo espaçamento do link */
   }
 
   .contentFooter{
@@ -201,12 +198,41 @@ button:hover{
 
 @media (max-width: 600px){
   .contentTitle{
-    font-size: 1rem;
     padding: 20px;
+    word-break: break-word;
   }
-  .contentDescription{
-    font-size: 14px;
+  .contentDescription a, .contentDescription p{
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px){
+  .loginTitle{
+    font-size: 0.8rem;
+  }
+  .contentTitle{
+    font-size: 0.8rem;
+  }
+  .contentDescription p{
+    font-size: 0.8rem;
+  }
+  .contentDescription a{
+    font-size: 0.8rem;
+  }
+  .buttonDiv a{
+    font-size: 0.8rem;
+  }
+  .buttonDiv{
+    gap: 20px;
   }
 
+  .input input{
+    width: 250px;
+    font-size: 0.8rem;
+  }
 
+  .input label{
+    font-size: 0.8rem;
+  };
 }
