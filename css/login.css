@@ -1,161 +1,149 @@
 .loginBg{
-  max-width: 1200px;
-  margin: 0px auto;
+  background-color: #eceff4;
   height: 100vh;
-  background-image: linear-gradient(#c0c0c0, #568f74);
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  border-radius: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.login{
-  display: grid;
-  grid-template-columns: 1fr;
+.container {
   box-sizing: border-box;
-}
-
-.loginText{
-  place-self: center;
-  background-color:#274D30; 
-  padding: 32px; 
-  border-radius: 5px;
-  color: #fff;
-  font-family:'Times New Roman', Times, serif;
-}
-
-.loginText h1{
-  font-size: 3rem;
-}
-
-.loginText p{
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 20px;
-  text-transform: uppercase;  
-  letter-spacing: 1px;
-}
-
-
-.loginImg{
-  justify-self: center;
-  align-self: end;
-  margin-bottom: 80px; 
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .loginForm{
-  display: flex;
-  flex-direction: column;
-  padding: 40px; background-image: linear-gradient(#568f74, #8aceae);
-  gap: 12px;
-  justify-content: center;
+  background-color: #ffffff;
 }
-
-.loginAviso{
-  padding: 60px;
+.loginTitle{
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  font-size: 1.30rem;
-  max-width: 60ch;
-  line-height: 1.6rem;
-  font-family: 'Times New Roman', Times, serif;
 }
 
-.loginForm a{
-  width: max-content;
-  padding: 4px;
-}
-
-.loginForm a:hover, a:focus{
-  color: #fff;
-  outline: none;
-}
-
-.contentInput label{
-  display: block;
-}
-
-.contentInput:first-child{
-  margin-top: 30px;
-}
-
-.contentInput{
+.form{
   display: flex;
   flex-direction: column;
-  margin-top: 8px;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.contentInput input{
-  background-color: #d3fae8;
-  margin-top: 4px;
-  padding: 8px;
-  font-size: 1rem;
-  border-radius: 4px;
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input label{
+  display: block;  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #5a5a5a;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.input input{
+  width: 100%;
+  margin-bottom: 16px;
   border: 1px solid transparent;
-  outline: none;
-  font-family: 'Courier New', Courier, monospace;
+  padding: 8px;
+  width: 300px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
+  border-radius: 4px;
+  background-color: #eceff4;
+  transition: 0.3s ease-in-out;
 }
 
-.contentInput input:hover, input:focus{
-  border-color: #000;
-  box-shadow: 2px 2px 2px #274D30;
-  transition: .5s ease;
+.input input:focus{
+outline: none;
+border-color: #27b91a;
+background-color: #fff;
+box-shadow: 0 0 2px 5px #27b91a3a;
 }
-.botaoLogin{
-  padding: 10px 40px;
-  background-color: #4e815a;
-  border-style: none;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
+
+button{
+  border: none;
+  padding: 12px 32px;
+  border-radius: 20px;
+  background-color: #27b91a;
+  color: #ffffff;
   text-transform: uppercase;
-  box-shadow: 2px 2px 2px #274D30;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #68c260;
   outline: none;
 }
 
-.botaoLogin:focus, .botaoLogin:hover{
-  background-color: #274D30;
-  border-color: #000;
-  box-shadow: 2px 2px 2px #4e815a;
-
+.buttonDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
-
-@media (max-width: 800px){
-  .loginBg{
-    grid-template-columns: 1fr;
-    background-image: inherit;
-    background-color: #fff;
-    border-radius: 0;
-  }
-  .loginImg{
-    display: none;
-  }
+.buttonDiv a{
+    color: #8a8a8a;
+    padding: 8px;
 }
 
-@media (max-width: 600px){
-  .loginText h1{
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  .loginText p{
-    font-size: 1rem;
-  }
-
-  .loginAviso{
-    font-size: 1.10rem;
-    padding: 20px;
-  }
-  
-  .loginForm{
-    padding: 20px;
-  }
+.buttonDiv a:hover{
+  color: #27b91a;
 }
 
-@media (max-width: 400px){
-  .loginText h1{
-    font-size: 2rem;
-    word-break: break-all;
-  }
-  .loginText{
-    padding: 20px;
-  }
+.loginContent{
+  background-color: #0f0c22d2;
+  color: #fcffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 -32px #eceff4, inset 0 32px #eceff4;
 }
+
+.contentTitle{
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.contentDescription p{
+  padding: 0 40px 0 40px;
+  line-height: 1.6;
+  width: 45ch;
+  color: #a9a6b4d2 ;
+}
+.contentDescription a{
+  color: #a9a6b4d2 ;
+  text-decoration: none;
+}
+  .contentDescription a:hover{
+  color: #ffffff ;
+  text-decoration: none;
+}
+
+.contentFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.contentMap a{
+  padding: 12px 32px;
+  border-radius: 20px;
+  background-color: #27b91a;
+  color: #ffffff;
+}
+
+.contentMap a:hover{
+  background-color: #68c260;
+}
+

@@ -1,8 +1,8 @@
 var auth = firebase.auth();
 
 function login() {
-  var email = document.getElementById('emailInput').value;
-  var password = document.getElementById('passwordInput').value;
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
 
   auth.signInWithEmailAndPassword(email, password)
     .then((userCredential) => {

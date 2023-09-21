@@ -9,44 +9,54 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-  
-  
-  <div class="loginBg">
-    
-    <div class="login">
-      <div class="loginText">
-        <h1>Louvor IPJK</h1>
-        <p>Controle do Louvor</p>
+
+<main class="loginBg">
+  <div class="container">
+    <div class="loginForm">
+      <div class="loginTitle">
+        <h1>Login</h1>
       </div>
-      <div class="loginAviso">
-        <span>Esta página é dedicada para o controle da escala e músicas da equipe de música da Igreja Presbiteriana do JK - Cel. Fabriciano - MG  </span>
-      </div>
-      <div class="loginImg">
-        <img src="./img/ipjk logo branco.svg" alt="">
+      <div class="form">
+        <form action="#">
+          <div class="input">
+            <label for="email">E-Mail</label>
+            <input class="email" type="email" id="email" name="email"required>
+          </div>
+          <div class="input">
+            <label for="password">Senha</label>
+            <input class="password" type="password" id="password" name="password" required>
+          </div>
+        </div>
+        
+        <div class="buttonDiv">
+          <a href="#">Esqueci minha senha</a>
+          <button onclick="login()">Entrar</button>
+        </form>
       </div>
     </div>
     
-    <div id="loginForm" class="loginForm">
-      <h2>Login</h2>
-      <div class="divInput">
-        <div class="contentInput">
-          <label for="emailInput">Email</label>
-          <input type="email" id="emailInput" required>
-        </div>
-        <div class="contentInput">
-          <label for="passwordInput">Senha</label>
-          <input type="password" id="passwordInput">
-        </div>
+    <div class="loginContent">
+      <div class="contentTitle">
+        <h2>Bem vindo à Igreja Presbiteriana do Jk</h2>
+      </div>      
+      <div class="contentDescription">
+        <p>
+          Esta página de login será utilizada para acessar a página de controle da equipe de música da Igreja Presbiteriana do Jk. <br> <br>
+          <a href="https://www.google.com/maps/place/Igreja+Presbiteriana+de+JK/@-19.5098849,-42.6294089,17z/data=!3m1!4b1!4m6!3m5!1s0xa5542a532dd077:0xd9de342a2ee3fc15!8m2!3d-19.50989!4d-42.626834!16s%2Fg%2F1tt1txzt?authuser=0&entry=ttu" target="_blank">Localizada na R. Joaquim Gomes da Silveira Neto, 258 - Júlia Kubitschek, Cel. Fabriciano - MG, 35171-095</a>
+        </p>
       </div>
-      <button class="botaoLogin" onclick="login()">Entrar</button>
-      <a href="#">Esqueçeu a senha?</a>
+      <div class="contentFooter">
+      <div class="contentMap"> 
+        <a href="https://presbiterianajk.github.io/" target="_blank">Acessar o site</a>
+      </div>
+      </div>  
     </div>
   </div>
-  
-  
-  
-  <script src="./config.js"></script>
-  <script src="./login.js"></script>
+</main>
+
+
+
+<script src="./config.js"></script>
+<script src="./login.js"></script>
 </body>
 </html>
