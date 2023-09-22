@@ -168,28 +168,24 @@ button:hover{
 
 
 @media (max-width: 900px){
-  .loginBg{
-    height: inherit;
-  }
-
   .container{
     grid-template-columns: 1fr;
     padding: 0;
-    height: 100vh;
     box-sizing: border-box;
   }
 
   .loginContent{
     box-shadow: inherit;
+    grid-row: 1;
   }
+
   .contentTitle{
     padding: 40px 40px 20px 40px;
     font-size: 1rem;
   }
   
-  .contentDescription p{
-    padding: 12px;
-    /* ficar mesmo espaçamento do link */
+  .contentDescription a{
+    display: none;
   }
 
   .contentFooter{
