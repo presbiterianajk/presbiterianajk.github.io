@@ -12,7 +12,7 @@
 }
 /* fundo branco da imagem */
 .header-imagem{
-  background-color: #eef7ee;
+  background-color: var(--corFundo);
   padding: 20px;
   border-bottom-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -25,8 +25,7 @@
 }
 
 .header-menu a {
-  /* color: #04200B; */
-  color: #fff;
+  color: #f0ffff;
   /* PADDING 16 CIMA E BAIXO PARA FICAR MAIS FACIL O CURSOR DO MOUSE ENCONTRAR NA VERSÃO DESKTOP */
   padding: 16px 0px;
   position: relative;
@@ -81,8 +80,7 @@
 
   .header-menu a.active {
     background-image: linear-gradient(#9ABDA3, #4C7956); 
-    color: #fff; 
-
+    color: var(--corFundo);
     /* Outros estilos que você desejar quando o botao da nav estiver ativo*/
   }
 }

@@ -10,21 +10,13 @@
 .introducao h1{
   font-size: 48px;
   margin-bottom: 20px;
-  font-family: "Noto Serif Regular";
-}
-
-.introducao h2{
-    font-family: "Noto Serif Regular";
-  font-size: 40px;
+  font-family: "Roboto", serif;
 }
 
 @media (max-width: 800px){
   .introducao h1{
     font-size: 36px;
     margin-bottom: 10px;
-  }
-  .introducao h2{
-    font-size: 28px;
   }
 }
 
@@ -35,10 +27,5 @@
   }
   .introducao h1{
     font-size: 24px;
-    display: none;
-  }
-  .introducao h2{
-    font-size: 24px;
-    margin-top: 20px;
   }
 }

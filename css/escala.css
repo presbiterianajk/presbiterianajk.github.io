@@ -26,10 +26,9 @@
 }
 
 .escala-lista li {
-  background-color: #D1E4D6;
+  background-color: var(--cor01);
   padding: 16px;
   border-radius: 4px;
-  /* font-weight: 600; */
   font-size: 24px;
   text-align: center;
   flex-grow: 1;

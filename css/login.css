@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.loginContainer{
   box-sizing: border-box;
   max-width: 1200px;
   padding-left: 20px;
@@ -168,7 +168,7 @@ button:hover{
 
 
 @media (max-width: 900px){
-  .container{
+  .loginContainer{
     grid-template-columns: 1fr;
     padding: 0;
     box-sizing: border-box;

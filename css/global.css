@@ -1,12 +1,39 @@
+:root{
+  --corPrimaria: #0d5131;
+  --corFundo: #ffffff;
+  --corTexto: #000000; 
+  --cor01: #D1E4D6;
+  --cor02: #eef7ee;
+  --corBotao01: #0d5131;
+  --corBotao02: #dddddd;
+  --gradienteBotao: linear-gradient(#fff, #abc4b1);
+}
+
+@media (prefers-color-scheme: light){
+  :root{
+  --corPrimaria: #0d5131;
+  --corFundo: #000000;
+  --corTexto: #f0ffff; 
+  --cor01: #6a8672;
+  --cor02: #0d5131;
+  --corBotao01: #0d5131;
+  --corBotao02: #aaaaaa;
+  --gradienteBotao: linear-gradient(#9ABDA3, #4C7956);
+
+  }
+}
+
 /* ESTILOS GERAIS */
 body{
   margin: 0px;
   padding: 0px;
   font-family: "Roboto Regular", sans-serif;
+  background-color: var(--corFundo);
+  color: var(--corTexto);
 }
  a{
   text-decoration: none;
-  color: #000;
+  color: var(--corTexto);
   display: inline-block;
 }
 
@@ -23,37 +50,22 @@ h1, h2, h3,h4, span, p, ul, li,a {
 }
 
 .tituloh3, .decoration{
-  color: #0d5131;
+  color: var(--corPrimaria);
   font-size: 60px;
   font-family: "Roboto Medium", sans-serif;
 }
 
 
-hr{
-  background-color: #D1E4D6
-}
-
 .botaoAviso{
   padding: 10px 40px;
-  background-color: #274D30;
+  background-color: var(--corPrimaria);
   border-style: none;
-  color: #fff;
+  color: var(--corFundo);
   border-radius: 5px;
   cursor: pointer;
 }
 
-
- /* controla a cor do botoes */
-.mobile-nav .nav-link {
-  color: #000; /* cor padrão dos botões */
-}
-
-.mobile-nav .nav-link.active {
-  color: #ff0000; /* cor dos botões selecionados */
-}
-
 /* controla o funcionamento mobile dos links com js */
-
 @media (max-width: 600px){
 
   section {

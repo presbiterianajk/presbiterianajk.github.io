@@ -90,11 +90,11 @@ function criarItemMusica(musica) {
   
   var pCifra = document.createElement('p');
   pCifra.className = 'link-titulo';
-  pCifra.innerHTML = '<strong>Cifra Club</strong><a href="' + musica.cifraLink + '">Acessar Cifra</a>';
+  pCifra.innerHTML = '<strong>Cifra Club</strong><a href="' + musica.cifraLink + '" target="_blank">Acessar Cifra</a>';
   
   var pVideo = document.createElement('p');
   pVideo.className = 'link-titulo';
-  pVideo.innerHTML = '<strong>Youtube</strong><a href="' + musica.videoLink + '">Acessar Vídeo</a>';
+  pVideo.innerHTML = '<strong>Youtube</strong><a href="' + musica.videoLink + '" target="_blank">Acessar Vídeo</a>';
   
   divLink.appendChild(pCifra);
   divLink.appendChild(pVideo);

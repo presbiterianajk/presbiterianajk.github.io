@@ -42,7 +42,7 @@
 }
 
 .organizacao-lista li:nth-child(odd){
-  background-color: #D1E4D6;
+  background-color: var(--cor01);
   border-radius: 4px;
 }
 
