@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .container {
@@ -34,12 +35,12 @@
   margin-top: 40px;
 }
 
-.input {
+.inputContainer {
   display: flex;
   flex-direction: column;
 }
 
-.input label{
+.inputContainer label{
   display: block;  
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #5a5a5a;
@@ -48,7 +49,7 @@
   font-weight: 600;
 }
 
-.input input{
+.inputContainer input{
   width: 100%;
   margin-bottom: 16px;
   border: 1px solid transparent;
@@ -62,11 +63,20 @@
   transition: 0.3s ease-in-out;
 }
 
-.input input:focus{
+.inputContainer input:focus{
 outline: none;
 border-color: #27b91a;
 background-color: #fff;
 box-shadow: 0 0 2px 5px #27b91a3a;
+}
+
+.buttonDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
 button{
@@ -85,15 +95,6 @@ button:hover{
   outline: none;
 }
 
-.buttonDiv{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding-top: 20px;
-  padding-bottom: 80px;
-}
-
 .buttonDiv a{
     color: #8a8a8a;
     padding: 8px;
@@ -104,12 +105,15 @@ button:hover{
   color: #27b91a;
 }
 
+/* -----------SEGUNDA TELA----------------- */
+
 .loginContent{
   background-color: #0f0c22d2;
   color: #fcffff;
   display: flex;
   flex-direction: column;
   box-shadow: inset 0 -32px #eceff4, inset 0 32px #eceff4;
+  /* efeito tela menor */
 }
 
 .contentTitle{
@@ -119,7 +123,7 @@ button:hover{
 }
 
 .contentDescription{ 
-  padding: 0px 40px 0 40px;
+  padding: 0px 40px 0px 40px;
   margin-top: 40px;
 }
 
@@ -135,6 +139,7 @@ button:hover{
   padding: 12px;
   border-radius: 4px;
   color: #cdcdcd;
+  margin-top: 12px;
 }
   .contentDescription a:hover{
   color: #ffffff ;
@@ -149,7 +154,7 @@ button:hover{
   gap: 10px;
 }
 
-.contentMap a{
+.contentButton a{
   padding: 12px 32px;
   border-radius: 20px;
   background-color: #27b91a;
@@ -157,7 +162,7 @@ button:hover{
   font-size: 1rem;
 }
 
-.contentMap a:hover{
+.contentButton a:hover{
   background-color: #68c260;
 }
 
@@ -170,6 +175,8 @@ button:hover{
   .container{
     grid-template-columns: 1fr;
     padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
   }
 
   .loginContent{
@@ -186,7 +193,7 @@ button:hover{
   }
 
   .contentFooter{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .loginTitle{
@@ -201,7 +208,7 @@ button:hover{
 
 @media (max-width: 600px){
   .contentTitle{
-    padding: 20px;
+    padding: 40px 0 20px 0;
     word-break: break-word;
   }
   .contentDescription a, .contentDescription p{
@@ -214,6 +221,11 @@ button:hover{
   .input input{
     width: 260px;
   }
+
+  .buttonDiv{
+    padding: 40px 0 20px 0;
+  }
+
   .buttonDiv a{
     font-size: 0.8rem;
   }
@@ -221,4 +233,7 @@ button:hover{
   .form{ 
     margin-top: 0;
   }
+  .contentDescription {
+    margin-top: 0px;
+  }	
 }
