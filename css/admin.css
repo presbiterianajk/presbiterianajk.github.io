@@ -21,7 +21,7 @@ border-radius: 12px;
 .updateForm{
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(#8aceae, #568f74);
+  background: linear-gradient(#8aceae, #568f74);
   border-radius: 5px;
   gap: 12px;
   margin-top: 40px;

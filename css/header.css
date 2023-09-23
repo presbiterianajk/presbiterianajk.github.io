@@ -1,5 +1,5 @@
 .header-bg{
-  background-image: linear-gradient(#125c39, #0d5131);
+  background: linear-gradient(#125c39, #0d5131);
 }
 
 .header {
@@ -59,7 +59,7 @@
   }
 
   .header-menu a {
-    background-image: linear-gradient(#fff, #abc4b1);
+    background: linear-gradient(#fff, #abc4b1);
    padding: 10px 20px;
     border-radius: 4px;
     font-size: 0.8rem;
@@ -79,7 +79,7 @@
   }
 
   .header-menu a.active {
-    background-image: linear-gradient(#9ABDA3, #4C7956); 
+    background: linear-gradient(#9ABDA3, #4C7956); 
     color: var(--corFundo);
     /* Outros estilos que você desejar quando o botao da nav estiver ativo*/
   }
