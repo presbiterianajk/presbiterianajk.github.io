@@ -10,7 +10,7 @@
 .introducao h1{
   font-size: 48px;
   margin-bottom: 20px;
-  font-family: "Roboto", serif;
+  font-family: "Roboto Medium", serif;
 }
 
 @media (max-width: 800px){

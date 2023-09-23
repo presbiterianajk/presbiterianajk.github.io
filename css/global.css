@@ -1,6 +1,6 @@
 :root{
   --corPrimaria: #0d5131;
-  --corFundo: #ffffff;
+  --corFundo: #f5f5f5;
   --corTexto: #000000; 
   --cor01: #D1E4D6;
   --cor02: #eef7ee;
@@ -12,12 +12,12 @@
 @media (prefers-color-scheme: dark){
   :root{
   --corPrimaria: #0d5131;
-  --corFundo: #000000;
-  --corTexto: #f0ffff; 
-  --cor01: #6a8672;
+  --corFundo: #0e0e0e;
+  --corTexto: #ffffff; 
+  --cor01: #4f885f;
   --cor02: #0d5131;
   --corBotao01: #0d5131;
-  --corBotao02: #aaaaaa;
+  --corBotao02: #918e8e;
   --gradienteBotao: linear-gradient(#9ABDA3, #4C7956);
 
   }

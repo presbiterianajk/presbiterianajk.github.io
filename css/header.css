@@ -59,12 +59,12 @@
   }
 
   .header-menu a {
-    background: linear-gradient(#fff, #abc4b1);
+    background-color:var(--corFundo);
    padding: 10px 20px;
     border-radius: 4px;
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: #0d5131;
+    color: var(--corTexto);
   }
 
   .header-menu {
@@ -79,7 +79,7 @@
   }
 
   .header-menu a.active {
-    background: linear-gradient(#9ABDA3, #4C7956); 
+    background-color: #9ABDA3;
     color: var(--corFundo);
     /* Outros estilos que você desejar quando o botao da nav estiver ativo*/
   }
@@ -91,7 +91,6 @@
   }
 
   .header-menu a {
-    background-color: #ddd;
    padding: 8px 16px;
     border-radius: 4px;
     font-weight: 450;
