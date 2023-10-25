@@ -25,6 +25,11 @@
   transition: visibility 0s, opacity 0.5s;
 }
 
+.paragrafoAviso{ 
+  color: var(--corTexto);
+  
+}
+
 .popup-content {
   text-align: center;
 }

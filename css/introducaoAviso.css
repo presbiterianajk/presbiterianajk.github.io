@@ -2,7 +2,7 @@
   max-width: 1200px;
   text-align: center;
   margin: 0px auto;
-  background-color: #D1E4D6; 
+  background-color: var(--cor02); 
   text-align: center;
   margin-top: 40px;
   padding: 40px;
