@@ -10,7 +10,7 @@
 }
 
 .tituloAviso{
-  color: #274D30;
+  color: var(--corTexto);
   font-size: 60px;
 }
 

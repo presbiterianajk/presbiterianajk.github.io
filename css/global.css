@@ -58,7 +58,7 @@ h1, h2, h3,h4, span, p, ul, li,a {
 
 .botaoAviso{
   padding: 10px 40px;
-  background-color: var(--corPrimaria);
+  background-color: var(--corBotao02);
   border-style: none;
   color: var(--corFundo);
   border-radius: 5px;
